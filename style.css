@@ -723,3 +723,37 @@ footer { position: relative; z-index: 1; background: var(--bg); border-top: 1px 
   .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
   .form-row { grid-template-columns: 1fr; }
 }
+
+/* ── SOFTSKILLS ── */
+.about-softskills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+.softskill-item {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.9rem 1rem;
+  transition: border-color 0.2s;
+}
+.softskill-item:hover { border-color: var(--border2); }
+.softskill-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; }
+.softskill-title {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+.softskill-desc {
+  font-size: 0.78rem;
+  color: var(--text2);
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .about-softskills { grid-template-columns: 1fr; }
+}
